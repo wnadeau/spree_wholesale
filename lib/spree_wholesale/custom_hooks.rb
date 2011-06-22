@@ -1,6 +1,4 @@
-module SpreeWholesale
-  class CustomHooks < Spree::ThemeSupport::HookListener
-        
+
     Deface::Override.new(:virtual_path => "orders/_line_item",
                      :name => "converted_cart_item_price_742898871",
                      :replace => "[data-hook='cart_item_price'], #cart_item_price[data-hook]",
@@ -69,5 +67,4 @@ module SpreeWholesale
                      :partial => "admin/hooks/wholesale_tab",
                      :disabled => false)
     
-  end
-end
+ 
